@@ -144,7 +144,7 @@ ul.features-list{
     padding-left: .1em;
     text-align: left;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 10fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 5fr));
 
     li{
         font-size: 1.1em;
