@@ -23,11 +23,12 @@ body{
     background-color: var(--bg);
 }
 
-
-
 .navbar{
+    position: fixed;
+    width: 100%;
     background: var(--bg-navbar);
     padding: 1em;
+    z-index: 1;
 
     .logo{
         text-decoration: none;
@@ -87,6 +88,26 @@ nav{
     }
 }
 
+#myTopBtn{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    margin: 0 0 1.2em 1.2em;
+    z-index: 99;
+    cursor: pointer;
+    animation: buttonTopMobile 2s ease-out infinite alternate;
+}
+
+@keyframes buttonTopMobile {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
 .mobile-menu-exit{
     float: right;
     margin: .5em;
@@ -226,6 +247,10 @@ input[type="submit"]{
     margin-bottom: 2em;
 }
 
+.contact-left{
+    text-align: center;
+}
+
 .rights{
     margin-bottom: 2em;
 }
@@ -339,6 +364,7 @@ iframe{
         }
     }
     .contact-left{
+        text-align: left;
         h2{
             margin-bottom: 1em;
         }
@@ -357,6 +383,19 @@ iframe{
         height: 100%;
         iframe{
             height: 100%;
+        }
+    }
+
+    #myTopBtn{
+        animation: buttonTop 1s ease-out infinite alternate;
+    }
+
+    @keyframes buttonTop {
+        0%{
+            transform: translateY(0%);
+        }
+        100%{
+            transform: translateY(-30%);
         }
     }
 }

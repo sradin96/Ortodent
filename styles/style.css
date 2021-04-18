@@ -24,8 +24,11 @@ body {
 }
 
 .navbar {
+  position: fixed;
+  width: 100%;
   background: var(--bg-navbar);
   padding: 1em;
+  z-index: 1;
 }
 
 .navbar .logo {
@@ -84,6 +87,41 @@ nav li a {
 
 nav li a:hover {
   font-weight: bold;
+}
+
+#myTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  margin: 0 0 1.2em 1.2em;
+  z-index: 99;
+  cursor: pointer;
+  -webkit-animation: buttonTopMobile 2s ease-out infinite alternate;
+          animation: buttonTopMobile 2s ease-out infinite alternate;
+}
+
+@-webkit-keyframes buttonTopMobile {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes buttonTopMobile {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 
 .mobile-menu-exit {
@@ -226,6 +264,10 @@ input[type="submit"] {
   margin-bottom: 2em;
 }
 
+.contact-left {
+  text-align: center;
+}
+
 .rights {
   margin-bottom: 2em;
 }
@@ -348,6 +390,9 @@ iframe {
     display: -ms-flexbox;
     display: flex;
   }
+  .contact-left {
+    text-align: left;
+  }
   .contact-left h2 {
     margin-bottom: 1em;
   }
@@ -366,6 +411,30 @@ iframe {
   }
   .contact-right iframe {
     height: 100%;
+  }
+  #myTopBtn {
+    -webkit-animation: buttonTop 1s ease-out infinite alternate;
+            animation: buttonTop 1s ease-out infinite alternate;
+  }
+  @-webkit-keyframes buttonTop {
+    0% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+    100% {
+      -webkit-transform: translateY(-30%);
+              transform: translateY(-30%);
+    }
+  }
+  @keyframes buttonTop {
+    0% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+    100% {
+      -webkit-transform: translateY(-30%);
+              transform: translateY(-30%);
+    }
   }
 }
 /*# sourceMappingURL=style.css.map */
