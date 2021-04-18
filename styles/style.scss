@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --bg: #FCFCFC;
     --bg-panel: #EBEBEB;
@@ -8,13 +12,18 @@
     --color-text: #000000;
 }
 
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{ 
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
 }
+
+
 
 .navbar{
     background: var(--bg-navbar);
@@ -116,7 +125,7 @@ section{
     }
     img{
         width: 3em;
-        margin: 0 1em;        
+        margin: 2em .3em 0em .3em;        
     }
 }
 
@@ -304,7 +313,7 @@ iframe{
                 width: 90%;
             }
             img{
-                margin: 0 1em 0 0;
+                margin: 1.5em 1em 0 0;
             }
         }
     }
