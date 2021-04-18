@@ -348,17 +348,20 @@ iframe {
     display: -ms-flexbox;
     display: flex;
   }
+  .contact-left h2 {
+    margin-bottom: 1em;
+  }
   .down {
     margin: 0;
   }
   .rights {
-    margin-top: 1em;
+    margin-top: 2em;
   }
   .contact-right {
     position: absolute;
     right: 0;
     top: 0;
-    width: 40%;
+    width: 50%;
     height: 100%;
   }
   .contact-right iframe {
