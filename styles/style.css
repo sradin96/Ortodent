@@ -116,15 +116,9 @@ section {
   margin-top: .2em;
 }
 
-.left-col .primary-cta {
-  background: var(--blue);
-  color: white;
-  text-decoration: none;
-  padding: .6em 1.3em;
-  font-size: 1.4em;
-  border-radius: 5em;
-  font-weight: bold;
-  display: inline-block;
+.left-col img {
+  width: 3em;
+  margin: 0 1em;
 }
 
 .hero-img {
@@ -163,10 +157,6 @@ ul.features-list li::before {
   background-image: url("../img/bullet.svg");
   background-size: contain;
   margin-right: .5em;
-}
-
-.features-section img {
-  display: none;
 }
 
 .testimonials-section {
@@ -217,12 +207,16 @@ input[type="submit"] {
   font-weight: bold;
   font-size: 1.3em;
   border: none;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
   border-radius: 5em;
   display: inline-block;
   padding: .8em 2em;
   width: unset;
   cursor: pointer;
+}
+
+.down {
+  margin-bottom: 2em;
 }
 
 iframe {
@@ -285,6 +279,76 @@ iframe {
   }
   .hero-img {
     width: 60%;
+  }
+  .left-col img {
+    width: 3.3em;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .hero .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .left-col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero .left-col img {
+    margin: 0 1em 0 0;
+  }
+  .hero-img {
+    width: 40%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 8em 0 0;
+  }
+  .testimonials-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .testimonials-section ul li {
+    margin: 0 1em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .down {
+    margin: 0;
+  }
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+  }
+  .contact-right iframe {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
