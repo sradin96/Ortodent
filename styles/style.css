@@ -227,7 +227,7 @@ input[type="submit"] {
 }
 
 .rights {
-  margin-top: .5em;
+  margin-bottom: 2em;
 }
 
 iframe {
@@ -350,6 +350,9 @@ iframe {
   }
   .down {
     margin: 0;
+  }
+  .rights {
+    margin-top: 1em;
   }
   .contact-right {
     position: absolute;
