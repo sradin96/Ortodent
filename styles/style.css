@@ -204,6 +204,11 @@ section {
   color: white;
 }
 
+.features-section .container h2 {
+  text-align: center;
+  margin: -2em 0 2em 0;
+}
+
 ul.features-list {
   margin: 0;
   padding-left: .1em;
