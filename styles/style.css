@@ -59,16 +59,40 @@ body {
 
 nav.menu-btn {
   display: block;
+  -webkit-animation: navAnimation 1s ease alternate;
+          animation: navAnimation 1s ease alternate;
+}
+
+@-webkit-keyframes navAnimation {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes navAnimation {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 nav {
   position: fixed;
   z-index: 999;
-  width: 50%;
+  width: 200px;
   right: 0;
   top: 0;
   background: #20272E;
-  height: 60vh;
+  height: 350px;
   padding: 1em;
 }
 
@@ -374,6 +398,10 @@ iframe {
        object-fit: contain;
     margin: 0 8em 0 0;
   }
+  .features-section .container {
+    width: 100%;
+    margin: auto;
+  }
   .testimonials-section ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -435,6 +463,13 @@ iframe {
       -webkit-transform: translateY(-30%);
               transform: translateY(-30%);
     }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .features-section .container {
+    width: 80%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
