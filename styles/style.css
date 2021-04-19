@@ -92,7 +92,7 @@ nav {
   right: 0;
   top: 0;
   background: #20272E;
-  height: 350px;
+  height: 320px;
   padding: 1em;
 }
 
@@ -234,6 +234,7 @@ ul.features-list li::before {
   background: #006BD6;
   text-align: center;
   padding: 2em 1em;
+  line-height: 1.5em;
   width: 80%;
   margin: 0 auto 5em auto;
   border-radius: 1em;
@@ -245,6 +246,12 @@ ul.features-list li::before {
   border: 5px solid #006BD6;
   border-radius: 50%;
   margin-top: -6em;
+}
+
+.testimonials-section ul li p {
+  margin: 1em 0 2em 0;
+  font-size: 16px;
+  font-family: 'Poppins';
 }
 
 h2 {
