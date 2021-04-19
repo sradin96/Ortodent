@@ -321,6 +321,10 @@ iframe {
   text-align: left;
 }
 
+.down {
+  margin-top: 2em;
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu, .mobile-menu-exit {
     display: none;
@@ -455,9 +459,6 @@ iframe {
   .down {
     margin: 0;
   }
-  .rights {
-    margin-top: 2em;
-  }
   .contact-right {
     position: absolute;
     right: 0;
@@ -468,10 +469,16 @@ iframe {
   .contact-right iframe {
     height: 100%;
   }
+  .down {
+    margin: 2em 0 0 -10em;
+  }
   .jotform-form {
     margin-top: -10em;
     width: 100%;
     margin-left: -10em;
+  }
+  .jotform-form .rights {
+    margin-top: 2em;
   }
   #myTopBtn {
     -webkit-animation: buttonTop 1s ease-out infinite alternate;
