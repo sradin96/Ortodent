@@ -204,10 +204,7 @@ ul.features-list {
   margin: 0;
   padding-left: .1em;
   text-align: left;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(12em, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  display: block;
 }
 
 ul.features-list li {
@@ -293,12 +290,25 @@ input[type="submit"] {
 }
 
 .rights {
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
 
 iframe {
   width: 100%;
   height: 300px;
+}
+
+#input_2 {
+  background: var(--blue);
+  border: none;
+  border-radius: 2em;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.jotform-form {
+  text-align: left;
 }
 
 @media only screen and (min-width: 768px) {
@@ -313,6 +323,14 @@ iframe {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+  }
+  ul.features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .navbar nav {
     display: -webkit-box;
@@ -434,11 +452,16 @@ iframe {
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 45%;
     height: 100%;
   }
   .contact-right iframe {
     height: 100%;
+  }
+  .jotform-form {
+    margin-top: -10em;
+    width: 100%;
+    margin-left: -10em;
   }
   #myTopBtn {
     -webkit-animation: buttonTop 1s ease-out infinite alternate;
@@ -463,6 +486,14 @@ iframe {
       -webkit-transform: translateY(-30%);
               transform: translateY(-30%);
     }
+  }
+  .contact-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
